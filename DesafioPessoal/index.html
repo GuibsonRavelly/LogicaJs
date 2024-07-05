@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Gastos</title>
+</head>
+<body>
+    <h2>Controle de Gastos</h2>
+
+    <form id="form-gastos">
+        <label for="data">Data:</label>
+        <input type="text" id="data" name="data" required>
+        <label for="faturamento">Faturamento Diário (R$):</label>
+        <input type="text" id="faturamento" name="faturamento" required>
+        <label for="gastos">Gastos Diários (R$):</label>
+        <input type="text" id="gastos" name="gastos" required>
+        <button type="button" onclick="adicionarLinha()">Adicionar</button>
+    </form>
+
+    <table id="tabela-gastos" border="1">
+        <tr>
+            <th>Data</th>
+            <th>Faturamento Diário (R$)</th>
+            <th>Gastos Diários (R$)</th>
+            <th>Liquidez (R$)</th>
+        </tr>
+       
+        <!-- Linhas adicionadas dinamicamente aparecerão aqui -->
+
+
+    </table>
+
+    <script src="script.js"></script>
+        
+    </body>
